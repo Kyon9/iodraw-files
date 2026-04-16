@@ -5,7 +5,7 @@
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="z5i9DncNK-iLaoH-zkep-68" value="硬件侧 - 数据采集" style="whiteSpace=wrap;strokeWidth=2;verticalAlign=top;" vertex="1" parent="1">
-          <mxGeometry x="160" y="120" width="258" height="253" as="geometry" />
+          <mxGeometry x="150" y="130" width="258" height="253" as="geometry" />
         </mxCell>
         <mxCell id="z5i9DncNK-iLaoH-zkep-69" value="📹 工业产线场景&#xa;(实时视频流)" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="z5i9DncNK-iLaoH-zkep-68">
           <mxGeometry x="46" y="43" width="183" height="66" as="geometry" />
@@ -57,7 +57,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="z5i9DncNK-iLaoH-zkep-82" value="业务层 - 前端 App" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
-          <mxGeometry x="368" y="781" width="488" height="263" as="geometry" />
+          <mxGeometry x="690" y="40" width="488" height="263" as="geometry" />
         </mxCell>
         <mxCell id="z5i9DncNK-iLaoH-zkep-83" value="&lt;b&gt;识别结果展示页&lt;/b&gt;&#xa;(图像标注 + 能效等级 + 键值对)" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
           <mxGeometry x="492" y="806" width="241" height="84" as="geometry" />
@@ -90,7 +90,7 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="z5i9DncNK-iLaoH-zkep-90" value="标准化上传请求 (Multipart/Form-Data)" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.226;entryY=0.013;rounded=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="z5i9DncNK-iLaoH-zkep-68" target="z5i9DncNK-iLaoH-zkep-71">
+        <mxCell id="z5i9DncNK-iLaoH-zkep-90" value="标准化上传请求 (Multipart/Form-Data)" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.218;entryY=0.005;rounded=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="z5i9DncNK-iLaoH-zkep-68" target="z5i9DncNK-iLaoH-zkep-71">
           <mxGeometry relative="1" as="geometry">
             <Array as="points" />
           </mxGeometry>
