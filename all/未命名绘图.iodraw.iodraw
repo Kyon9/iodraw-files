@@ -5,7 +5,7 @@
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="z5i9DncNK-iLaoH-zkep-68" value="硬件侧 - 数据采集" style="whiteSpace=wrap;strokeWidth=2;verticalAlign=top;" vertex="1" parent="1">
-          <mxGeometry x="290" y="155" width="258" height="253" as="geometry" />
+          <mxGeometry x="150" y="130" width="258" height="253" as="geometry" />
         </mxCell>
         <mxCell id="z5i9DncNK-iLaoH-zkep-69" value="📹 工业产线场景&#xa;(实时视频流)" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="z5i9DncNK-iLaoH-zkep-68">
           <mxGeometry x="46" y="43" width="183" height="66" as="geometry" />
@@ -57,7 +57,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="z5i9DncNK-iLaoH-zkep-82" value="业务层 - 前端 App" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
-          <mxGeometry x="716" y="145" width="488" height="263" as="geometry" />
+          <mxGeometry x="660" y="120" width="488" height="263" as="geometry" />
         </mxCell>
         <mxCell id="z5i9DncNK-iLaoH-zkep-83" value="&lt;b&gt;识别结果展示页&lt;/b&gt;&#xa;(图像标注 + 能效等级 + 键值对)" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
           <mxGeometry x="784" y="145" width="241" height="84" as="geometry" />
