@@ -65,6 +65,66 @@
             </Array>
           </mxGeometry>
         </mxCell>
+        <mxCell id="FeAikjar_WfJeEiBkdI0-16" value="输出: 识别一致性修复" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="20" y="982" width="512" height="116" as="geometry" />
+        </mxCell>
+        <mxCell id="FeAikjar_WfJeEiBkdI0-17" value="核心算法处理" style="whiteSpace=wrap;strokeWidth=2;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="114" y="596" width="316" height="335" as="geometry" />
+        </mxCell>
+        <mxCell id="FeAikjar_WfJeEiBkdI0-18" value="&lt;b&gt;选择性扫描机制 (SSM)&lt;/b&gt;&#xa;(自适应遗忘噪声 / 记忆有效笔画)" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="FeAikjar_WfJeEiBkdI0-17">
+          <mxGeometry x="43" y="46" width="246" height="101" as="geometry" />
+        </mxCell>
+        <mxCell id="FeAikjar_WfJeEiBkdI0-19" value="&lt;b&gt;联合损失函数 (Joint Loss)&lt;/b&gt;&#xa;L = L_rec + λ L_ocr" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="FeAikjar_WfJeEiBkdI0-17">
+          <mxGeometry x="49" y="222" width="233" height="84" as="geometry" />
+        </mxCell>
+        <mxCell id="FeAikjar_WfJeEiBkdI0-20" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.5;entryY=0;rounded=0;" edge="1" parent="FeAikjar_WfJeEiBkdI0-17" source="FeAikjar_WfJeEiBkdI0-18" target="FeAikjar_WfJeEiBkdI0-19">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FeAikjar_WfJeEiBkdI0-21" value="输入: 工业复杂环境样本" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="47" y="430" width="450" height="116" as="geometry" />
+        </mxCell>
+        <mxCell id="FeAikjar_WfJeEiBkdI0-22" value="镜面高光遮挡&#xa;(OCR文字丢失)" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="82" y="455" width="165" height="66" as="geometry" />
+        </mxCell>
+        <mxCell id="FeAikjar_WfJeEiBkdI0-23" value="标签破损/污渍&#xa;(特征断裂)" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="297" y="455" width="164" height="66" as="geometry" />
+        </mxCell>
+        <mxCell id="FeAikjar_WfJeEiBkdI0-24" value="高光区域笔画还原&#xa;(OCR成功提取)" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="55" y="1007" width="188" height="66" as="geometry" />
+        </mxCell>
+        <mxCell id="FeAikjar_WfJeEiBkdI0-25" value="受损特征上下文补全&#xa;(鲁棒性增强)" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="293" y="1007" width="204" height="66" as="geometry" />
+        </mxCell>
+        <mxCell id="FeAikjar_WfJeEiBkdI0-26" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.2;entryY=0;rounded=0;" edge="1" parent="1" source="FeAikjar_WfJeEiBkdI0-22" target="FeAikjar_WfJeEiBkdI0-17">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="165" y="571" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FeAikjar_WfJeEiBkdI0-27" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.8;entryY=0;rounded=0;" edge="1" parent="1" source="FeAikjar_WfJeEiBkdI0-23" target="FeAikjar_WfJeEiBkdI0-17">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="379" y="571" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FeAikjar_WfJeEiBkdI0-28" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.16;exitY=1;entryX=0.5;entryY=-0.01;rounded=0;" edge="1" parent="1" source="FeAikjar_WfJeEiBkdI0-17" target="FeAikjar_WfJeEiBkdI0-24">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="149" y="957" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FeAikjar_WfJeEiBkdI0-29" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.84;exitY=1;entryX=0.5;entryY=-0.01;rounded=0;" edge="1" parent="1" source="FeAikjar_WfJeEiBkdI0-17" target="FeAikjar_WfJeEiBkdI0-25">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="395" y="957" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
