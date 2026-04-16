@@ -95,7 +95,7 @@
             <Array as="points" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="z5i9DncNK-iLaoH-zkep-91" value="ResultPage 结构化反馈 (JSON)" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.5;entryY=0;rounded=0;" edge="1" parent="1" source="z5i9DncNK-iLaoH-zkep-71" target="z5i9DncNK-iLaoH-zkep-83">
+        <mxCell id="z5i9DncNK-iLaoH-zkep-91" value="ResultPage 结构化反馈 (JSON)" style="curved=1;startArrow=none;endArrow=block;exitX=0.736;exitY=0.004;entryX=0.476;entryY=0.996;rounded=0;entryDx=0;entryDy=0;entryPerimeter=0;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="z5i9DncNK-iLaoH-zkep-71" target="z5i9DncNK-iLaoH-zkep-82">
           <mxGeometry relative="1" as="geometry">
             <Array as="points" />
           </mxGeometry>
