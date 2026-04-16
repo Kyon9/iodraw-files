@@ -14,16 +14,16 @@
           <mxGeometry x="49" y="159" width="175" height="66" as="geometry" />
         </mxCell>
         <mxCell id="z5i9DncNK-iLaoH-zkep-71" value="推理层 - 云端服务器" style="whiteSpace=wrap;strokeWidth=2;verticalAlign=top;" vertex="1" parent="1">
-          <mxGeometry x="20" y="460" width="1184" height="231" as="geometry" />
+          <mxGeometry x="200" y="460" width="1004" height="231" as="geometry" />
         </mxCell>
         <mxCell id="z5i9DncNK-iLaoH-zkep-72" value="黑盒 OCR 服务" style="whiteSpace=wrap;strokeWidth=2;verticalAlign=top;" vertex="1" parent="z5i9DncNK-iLaoH-zkep-71">
-          <mxGeometry x="43" y="73.2439024390244" width="545" height="95.78048780487804" as="geometry" />
+          <mxGeometry x="36.46283783783784" y="73.2439024390244" width="462.1452702702703" height="95.78048780487804" as="geometry" />
         </mxCell>
         <mxCell id="z5i9DncNK-iLaoH-zkep-73" value="🔒 第三方 OCR API&#xa;(API 调用/闭环插件)" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="z5i9DncNK-iLaoH-zkep-72">
-          <mxGeometry x="58" y="30.283536585365848" width="204" height="46.48170731707317" as="geometry" />
+          <mxGeometry x="49.182432432432435" y="30.283536585365848" width="172.98648648648648" height="46.48170731707317" as="geometry" />
         </mxCell>
         <mxCell id="z5i9DncNK-iLaoH-zkep-74" value="结构化文本&#xa;(Key-Value)" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="z5i9DncNK-iLaoH-zkep-72">
-          <mxGeometry x="362" y="30.283536585365848" width="142" height="46.48170731707317" as="geometry" />
+          <mxGeometry x="306.96621621621625" y="30.283536585365848" width="120.41216216216218" height="46.48170731707317" as="geometry" />
         </mxCell>
         <mxCell id="z5i9DncNK-iLaoH-zkep-75" value="" style="curved=1;startArrow=none;endArrow=block;exitX=1;exitY=0.5;entryX=0;entryY=0.5;rounded=0;" edge="1" parent="z5i9DncNK-iLaoH-zkep-72" source="z5i9DncNK-iLaoH-zkep-73" target="z5i9DncNK-iLaoH-zkep-74">
           <mxGeometry relative="1" as="geometry">
@@ -31,28 +31,28 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="z5i9DncNK-iLaoH-zkep-76" value="Mamba-YOLO 核心分支" style="whiteSpace=wrap;strokeWidth=2;verticalAlign=top;" vertex="1" parent="z5i9DncNK-iLaoH-zkep-71">
-          <mxGeometry x="638" y="32.396341463414636" width="519" height="178.17987804878047" as="geometry" />
+          <mxGeometry x="541.0067567567568" y="32.396341463414636" width="440.097972972973" height="178.17987804878047" as="geometry" />
         </mxCell>
         <mxCell id="z5i9DncNK-iLaoH-zkep-77" value="视觉序列扫描&#xa;(Mixed Backbone)" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="z5i9DncNK-iLaoH-zkep-76">
-          <mxGeometry x="58" y="71.13109756097562" width="187" height="46.48170731707317" as="geometry" />
+          <mxGeometry x="49.182432432432435" y="71.13109756097562" width="158.57094594594597" height="46.48170731707317" as="geometry" />
         </mxCell>
         <mxCell id="z5i9DncNK-iLaoH-zkep-78" value="标签定位&#xa;(BBox)" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="z5i9DncNK-iLaoH-zkep-76">
-          <mxGeometry x="349" y="30.283536585365848" width="124" height="46.48170731707317" as="geometry" />
+          <mxGeometry x="295.9425675675676" y="30.283536585365848" width="105.14864864864866" height="46.48170731707317" as="geometry" />
         </mxCell>
         <mxCell id="z5i9DncNK-iLaoH-zkep-79" value="等级/状态&#xa;分类" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="z5i9DncNK-iLaoH-zkep-76">
-          <mxGeometry x="345" y="111.97865853658536" width="132" height="46.48170731707317" as="geometry" />
+          <mxGeometry x="292.5506756756757" y="111.97865853658536" width="111.93243243243244" height="46.48170731707317" as="geometry" />
         </mxCell>
         <mxCell id="z5i9DncNK-iLaoH-zkep-80" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.94;exitY=0;entryX=0;entryY=0.5;rounded=0;" edge="1" parent="z5i9DncNK-iLaoH-zkep-76" source="z5i9DncNK-iLaoH-zkep-77" target="z5i9DncNK-iLaoH-zkep-78">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="295" y="53.52439024390244" />
+              <mxPoint x="250.15202702702703" y="53.52439024390244" />
             </Array>
           </mxGeometry>
         </mxCell>
         <mxCell id="z5i9DncNK-iLaoH-zkep-81" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.94;exitY=1.01;entryX=0;entryY=0.51;rounded=0;" edge="1" parent="z5i9DncNK-iLaoH-zkep-76" source="z5i9DncNK-iLaoH-zkep-77" target="z5i9DncNK-iLaoH-zkep-79">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="295" y="135.21951219512192" />
+              <mxPoint x="250.15202702702703" y="135.21951219512192" />
             </Array>
           </mxGeometry>
         </mxCell>
