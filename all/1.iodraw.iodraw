@@ -5,13 +5,13 @@
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="z5i9DncNK-iLaoH-zkep-68" value="硬件侧 - 数据采集" style="whiteSpace=wrap;strokeWidth=2;verticalAlign=top;" parent="1" vertex="1">
-          <mxGeometry x="200" y="220" width="350" height="193" as="geometry" />
+          <mxGeometry x="200" y="240" width="320" height="173" as="geometry" />
         </mxCell>
         <mxCell id="z5i9DncNK-iLaoH-zkep-69" value="📹 工业产线场景&#xa;(实时视频流)" style="whiteSpace=wrap;strokeWidth=2;" parent="z5i9DncNK-iLaoH-zkep-68" vertex="1">
-          <mxGeometry x="50.8731007751938" y="50.00237154150197" width="248.25581395348834" height="50.34782608695652" as="geometry" />
+          <mxGeometry x="45.714285714285715" y="53.78238341968912" width="219.42857142857142" height="45.13238341968912" as="geometry" />
         </mxCell>
         <mxCell id="z5i9DncNK-iLaoH-zkep-70" value="📱 移动端/手机&#xa;(离线相册图片)" style="whiteSpace=wrap;strokeWidth=2;" parent="z5i9DncNK-iLaoH-zkep-68" vertex="1">
-          <mxGeometry x="66.47286821705427" y="121.29249011857706" width="237.4031007751938" height="50.34782608695652" as="geometry" />
+          <mxGeometry x="46.51233665559247" y="108.72332015810275" width="217.05426356589146" height="45.130434782608695" as="geometry" />
         </mxCell>
         <mxCell id="z5i9DncNK-iLaoH-zkep-71" value="推理层 - 云端服务器" style="whiteSpace=wrap;strokeWidth=2;verticalAlign=top;" parent="1" vertex="1">
           <mxGeometry x="200" y="460" width="860" height="190" as="geometry" />
