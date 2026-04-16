@@ -100,67 +100,6 @@
             <Array as="points" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="z5i9DncNK-iLaoH-zkep-95" value="多任务并行输出层" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
-          <mxGeometry x="1297" y="670" width="300" height="386" as="geometry" />
-        </mxCell>
-        <mxCell id="z5i9DncNK-iLaoH-zkep-96" value="混合主干网络 Mixed Backbone" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
-          <mxGeometry x="354" y="698" width="893" height="306" as="geometry" />
-        </mxCell>
-        <mxCell id="z5i9DncNK-iLaoH-zkep-97" value="能效标签&#xa;原始ROI图像" style="shape=cylinder3;boundedLbl=1;backgroundOutline=1;size=10;strokeWidth=2;whiteSpace=wrap;" vertex="1" parent="1">
-          <mxGeometry x="200" y="812" width="104" height="85" as="geometry" />
-        </mxCell>
-        <mxCell id="z5i9DncNK-iLaoH-zkep-98" value="&lt;b&gt;浅层: CNN Stages&lt;/b&gt;&#xa;(提取局部笔画特征)" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
-          <mxGeometry x="379" y="821" width="253" height="66" as="geometry" />
-        </mxCell>
-        <mxCell id="z5i9DncNK-iLaoH-zkep-99" value="&lt;b&gt;中层: Mixed Neck&lt;/b&gt;&#xa;(CNN + VSS Block 交叉扫描)" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
-          <mxGeometry x="681" y="821" width="257" height="66" as="geometry" />
-        </mxCell>
-        <mxCell id="z5i9DncNK-iLaoH-zkep-100" value="&lt;b&gt;深层: Mamba Stages&lt;/b&gt;&#xa;(线性复杂度全局感受野)" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
-          <mxGeometry x="988" y="812" width="234" height="84" as="geometry" />
-        </mxCell>
-        <mxCell id="z5i9DncNK-iLaoH-zkep-101" value="&lt;b&gt;分支A: 检测Head&lt;/b&gt;&#xa;(标签定位框 BBox)" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
-          <mxGeometry x="1322" y="705" width="250" height="66" as="geometry" />
-        </mxCell>
-        <mxCell id="z5i9DncNK-iLaoH-zkep-102" value="&lt;b&gt;分支B: 分类Head&lt;/b&gt;&#xa;(能效等级+物理状态)" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
-          <mxGeometry x="1322" y="821" width="250" height="66" as="geometry" />
-        </mxCell>
-        <mxCell id="z5i9DncNK-iLaoH-zkep-103" value="&lt;b&gt;分支C: Mamba OCR解码器&lt;/b&gt;&#xa;(原生序列解码输出文本)" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
-          <mxGeometry x="1331" y="938" width="232" height="84" as="geometry" />
-        </mxCell>
-        <mxCell id="z5i9DncNK-iLaoH-zkep-104" value="" style="curved=1;startArrow=none;endArrow=block;exitX=1;exitY=0.5;entryX=0;entryY=0.51;rounded=0;" edge="1" parent="1" source="z5i9DncNK-iLaoH-zkep-97" target="z5i9DncNK-iLaoH-zkep-98">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="z5i9DncNK-iLaoH-zkep-105" value="" style="curved=1;startArrow=none;endArrow=block;exitX=1;exitY=0.51;entryX=0;entryY=0.51;rounded=0;" edge="1" parent="1" source="z5i9DncNK-iLaoH-zkep-98" target="z5i9DncNK-iLaoH-zkep-99">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="z5i9DncNK-iLaoH-zkep-106" value="" style="curved=1;startArrow=none;endArrow=block;exitX=1;exitY=0.51;entryX=0;entryY=0.5;rounded=0;" edge="1" parent="1" source="z5i9DncNK-iLaoH-zkep-99" target="z5i9DncNK-iLaoH-zkep-100">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="z5i9DncNK-iLaoH-zkep-107" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.72;exitY=0.01;entryX=0;entryY=0.5;rounded=0;" edge="1" parent="1" source="z5i9DncNK-iLaoH-zkep-100" target="z5i9DncNK-iLaoH-zkep-101">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points">
-              <mxPoint x="1247" y="738" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="z5i9DncNK-iLaoH-zkep-108" value="" style="curved=1;startArrow=none;endArrow=block;exitX=1;exitY=0.5;entryX=0;entryY=0.51;rounded=0;" edge="1" parent="1" source="z5i9DncNK-iLaoH-zkep-100" target="z5i9DncNK-iLaoH-zkep-102">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="z5i9DncNK-iLaoH-zkep-109" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.7;exitY=1;entryX=0;entryY=0.49;rounded=0;" edge="1" parent="1" source="z5i9DncNK-iLaoH-zkep-100" target="z5i9DncNK-iLaoH-zkep-103">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points">
-              <mxPoint x="1247" y="979" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
