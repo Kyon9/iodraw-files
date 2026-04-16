@@ -5,13 +5,13 @@
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="z5i9DncNK-iLaoH-zkep-68" value="硬件侧 - 数据采集" style="whiteSpace=wrap;strokeWidth=2;verticalAlign=top;" parent="1" vertex="1">
-          <mxGeometry x="200" y="240" width="320" height="173" as="geometry" />
+          <mxGeometry x="200" y="240" width="360" height="173" as="geometry" />
         </mxCell>
         <mxCell id="z5i9DncNK-iLaoH-zkep-69" value="📹 工业产线场景&#xa;(实时视频流)" style="whiteSpace=wrap;strokeWidth=2;" parent="z5i9DncNK-iLaoH-zkep-68" vertex="1">
-          <mxGeometry x="45.714285714285715" y="53.78238341968912" width="219.42857142857142" height="45.13238341968912" as="geometry" />
+          <mxGeometry x="51.42857142857142" y="53.78238341968912" width="246.85714285714283" height="45.13238341968912" as="geometry" />
         </mxCell>
         <mxCell id="z5i9DncNK-iLaoH-zkep-70" value="📱 移动端/手机&#xa;(离线相册图片)" style="whiteSpace=wrap;strokeWidth=2;" parent="z5i9DncNK-iLaoH-zkep-68" vertex="1">
-          <mxGeometry x="46.51233665559247" y="108.72332015810275" width="217.05426356589146" height="45.130434782608695" as="geometry" />
+          <mxGeometry x="52.32637873754152" y="108.72332015810275" width="244.18604651162786" height="45.130434782608695" as="geometry" />
         </mxCell>
         <mxCell id="z5i9DncNK-iLaoH-zkep-71" value="推理层 - 云端服务器" style="whiteSpace=wrap;strokeWidth=2;verticalAlign=top;" parent="1" vertex="1">
           <mxGeometry x="200" y="460" width="860" height="190" as="geometry" />
@@ -67,27 +67,27 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="hGZf9_VGwsNqAUEReWxE-1" value="" style="group" vertex="1" connectable="0" parent="1">
-          <mxGeometry x="600" y="190" width="418" height="233" as="geometry" />
+          <mxGeometry x="600" y="210" width="418" height="213" as="geometry" />
         </mxCell>
         <mxCell id="z5i9DncNK-iLaoH-zkep-82" value="业务层 - 前端 App" style="whiteSpace=wrap;strokeWidth=2;verticalAlign=top;" parent="hGZf9_VGwsNqAUEReWxE-1" vertex="1">
-          <mxGeometry width="418" height="233" as="geometry" />
+          <mxGeometry width="418" height="213" as="geometry" />
         </mxCell>
         <mxCell id="z5i9DncNK-iLaoH-zkep-83" value="识别结果展示页&#xa;(图像标注 + 能效等级 + 键值对)" style="whiteSpace=wrap;strokeWidth=2;" parent="hGZf9_VGwsNqAUEReWxE-1" vertex="1">
-          <mxGeometry x="106.21311475409837" y="35.43726235741445" width="206.43032786885246" height="74.41825095057034" as="geometry" />
+          <mxGeometry x="106.21311475409837" y="32.39543726235741" width="206.43032786885246" height="68.03041825095058" as="geometry" />
         </mxCell>
         <mxCell id="z5i9DncNK-iLaoH-zkep-84" value="📊&#xa;数据看板" style="ellipse;aspect=fixed;strokeWidth=2;whiteSpace=wrap;" parent="hGZf9_VGwsNqAUEReWxE-1" vertex="1">
-          <mxGeometry x="65.09836065573771" y="139.97718631178708" width="59.94924577697439" height="59.94924577697439" as="geometry" />
+          <mxGeometry x="65.09836065573771" y="127.9619771863118" width="54.803387770367145" height="54.803387770367145" as="geometry" />
         </mxCell>
         <mxCell id="z5i9DncNK-iLaoH-zkep-85" value="🔍&#xa;人工复核" style="ellipse;aspect=fixed;strokeWidth=2;whiteSpace=wrap;" parent="hGZf9_VGwsNqAUEReWxE-1" vertex="1">
-          <mxGeometry x="179.45426229508197" y="139.97718631178708" width="59.94924577697439" height="59.94924577697439" as="geometry" />
+          <mxGeometry x="179.45426229508197" y="127.9619771863118" width="54.803387770367145" height="54.803387770367145" as="geometry" />
         </mxCell>
         <mxCell id="z5i9DncNK-iLaoH-zkep-86" value="📁&#xa;样本仓库" style="ellipse;aspect=fixed;strokeWidth=2;whiteSpace=wrap;" parent="hGZf9_VGwsNqAUEReWxE-1" vertex="1">
-          <mxGeometry x="290.00016393442627" y="139.97718631178708" width="59.94924577697439" height="59.94924577697439" as="geometry" />
+          <mxGeometry x="290.00016393442627" y="127.9619771863118" width="54.803387770367145" height="54.803387770367145" as="geometry" />
         </mxCell>
         <mxCell id="z5i9DncNK-iLaoH-zkep-87" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.16;exitY=0.99;entryX=0.5;entryY=0.01;rounded=0;" parent="hGZf9_VGwsNqAUEReWxE-1" source="z5i9DncNK-iLaoH-zkep-83" target="z5i9DncNK-iLaoH-zkep-84" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="98.50409836065575" y="117.82889733840304" />
+              <mxPoint x="98.50409836065575" y="107.7148288973384" />
             </Array>
           </mxGeometry>
         </mxCell>
@@ -99,7 +99,7 @@
         <mxCell id="z5i9DncNK-iLaoH-zkep-89" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.83;exitY=0.99;entryX=0.5;entryY=0.01;rounded=0;" parent="hGZf9_VGwsNqAUEReWxE-1" source="z5i9DncNK-iLaoH-zkep-83" target="z5i9DncNK-iLaoH-zkep-86" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="319.4959016393443" y="117.82889733840304" />
+              <mxPoint x="319.4959016393443" y="107.7148288973384" />
             </Array>
           </mxGeometry>
         </mxCell>
