@@ -56,7 +56,7 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="z5i9DncNK-iLaoH-zkep-82" value="业务层 - 前端 App" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+        <mxCell id="z5i9DncNK-iLaoH-zkep-82" value="业务层 - 前端 App" style="whiteSpace=wrap;strokeWidth=2;verticalAlign=top;" vertex="1" parent="1">
           <mxGeometry x="572" y="150" width="488" height="263" as="geometry" />
         </mxCell>
         <mxCell id="z5i9DncNK-iLaoH-zkep-83" value="&lt;b&gt;识别结果展示页&lt;/b&gt;&#xa;(图像标注 + 能效等级 + 键值对)" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
@@ -95,7 +95,7 @@
             <Array as="points" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="z5i9DncNK-iLaoH-zkep-91" value="ResultPage 结构化反馈 (JSON)" style="curved=1;startArrow=none;endArrow=block;exitX=0.736;exitY=0.004;entryX=0.5;entryY=1;rounded=0;entryDx=0;entryDy=0;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="z5i9DncNK-iLaoH-zkep-71" target="z5i9DncNK-iLaoH-zkep-82">
+        <mxCell id="z5i9DncNK-iLaoH-zkep-91" value="ResultPage 结构化反馈 (JSON)" style="curved=1;startArrow=none;endArrow=block;exitX=0.717;exitY=0.015;entryX=0.5;entryY=1;rounded=0;entryDx=0;entryDy=0;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="z5i9DncNK-iLaoH-zkep-71" target="z5i9DncNK-iLaoH-zkep-82">
           <mxGeometry relative="1" as="geometry">
             <Array as="points" />
           </mxGeometry>
