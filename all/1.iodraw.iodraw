@@ -1,290 +1,44 @@
 <mxfile host="www.iodraw.com" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36 Edg/147.0.0.0" version="24.7.17">
-  <diagram name="第 1 页" id="BQ4B56R-lfDb2WqUxSBQ">
-    <mxGraphModel dx="1676" dy="1040" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+  <diagram name="论文架构图" id="0">
+    <mxGraphModel dx="1173" dy="728" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="FeAikjar_WfJeEiBkdI0-1" value="多任务并行输出层" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
-          <mxGeometry x="1117" y="20" width="303" height="386" as="geometry" />
+        <mxCell id="layer1" value="数据采集层" style="rounded=1;fillColor=#E9DDAF;strokeColor=#333;" parent="1" vertex="1">
+          <mxGeometry x="200" y="500" width="600" height="120" as="geometry" />
         </mxCell>
-        <mxCell id="FeAikjar_WfJeEiBkdI0-2" value="混合主干网络 Mixed Backbone" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
-          <mxGeometry x="174" y="48" width="896" height="306" as="geometry" />
+        <mxCell id="cam" value="工业摄像头&#xa;实时视频流" style="rounded=1;fillColor=#6F8A91;fontColor=#ffffff;" parent="1" vertex="1">
+          <mxGeometry x="250" y="520" width="180" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="FeAikjar_WfJeEiBkdI0-3" value="能效标签&#xa;原始ROI图像" style="shape=cylinder3;boundedLbl=1;backgroundOutline=1;size=10;strokeWidth=2;whiteSpace=wrap;" vertex="1" parent="1">
-          <mxGeometry x="20" y="162" width="104" height="85" as="geometry" />
+        <mxCell id="phone" value="移动端App&#xa;图片数据" style="rounded=1;fillColor=#6F8A91;fontColor=#ffffff;" parent="1" vertex="1">
+          <mxGeometry x="520" y="520" width="180" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="FeAikjar_WfJeEiBkdI0-4" value="&lt;b&gt;浅层: CNN Stages&lt;/b&gt;&#xa;(提取局部笔画特征)" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
-          <mxGeometry x="199" y="171" width="253" height="66" as="geometry" />
+        <mxCell id="layer2" value="推理层（云端）" style="rounded=1;fillColor=#93AC93;strokeColor=#333;" parent="1" vertex="1">
+          <mxGeometry x="200" y="300" width="600" height="140" as="geometry" />
         </mxCell>
-        <mxCell id="FeAikjar_WfJeEiBkdI0-5" value="&lt;b&gt;中层: Mixed Neck&lt;/b&gt;&#xa;(CNN + VSS Block 交叉扫描)" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
-          <mxGeometry x="501" y="171" width="257" height="66" as="geometry" />
+        <mxCell id="yolo" value="Mamba-YOLO&#xa;检测 + 分类" style="rounded=1;fillColor=#DEAA87;" parent="1" vertex="1">
+          <mxGeometry x="250" y="320" width="200" height="90" as="geometry" />
         </mxCell>
-        <mxCell id="FeAikjar_WfJeEiBkdI0-6" value="&lt;b&gt;深层: Mamba Stages&lt;/b&gt;&#xa;(线性复杂度全局感受野)" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
-          <mxGeometry x="808" y="162" width="234" height="84" as="geometry" />
+        <mxCell id="ocr" value="OCR服务&#xa;文本解析" style="rounded=1;fillColor=#DEAA87;" parent="1" vertex="1">
+          <mxGeometry x="500" y="320" width="200" height="90" as="geometry" />
         </mxCell>
-        <mxCell id="FeAikjar_WfJeEiBkdI0-7" value="&lt;b&gt;分支A: 检测Head&lt;/b&gt;&#xa;(标签定位框 BBox)" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
-          <mxGeometry x="1142" y="55" width="250" height="66" as="geometry" />
+        <mxCell id="layer3" value="业务层（前端展示）" style="rounded=1;fillColor=#E9DDAF;" parent="1" vertex="1">
+          <mxGeometry x="200" y="100" width="600" height="140" as="geometry" />
         </mxCell>
-        <mxCell id="FeAikjar_WfJeEiBkdI0-8" value="&lt;b&gt;分支B: 分类Head&lt;/b&gt;&#xa;(能效等级+物理状态)" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
-          <mxGeometry x="1142" y="171" width="250" height="66" as="geometry" />
+        <mxCell id="result" value="识别结果展示&#xa;等级 + 文本信息" style="rounded=1;fillColor=#93AC93;" parent="1" vertex="1">
+          <mxGeometry x="350" y="120" width="300" height="100" as="geometry" />
         </mxCell>
-        <mxCell id="FeAikjar_WfJeEiBkdI0-9" value="&lt;b&gt;分支C: Mamba OCR解码器&lt;/b&gt;&#xa;(原生序列解码输出文本)" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
-          <mxGeometry x="1151" y="288" width="232" height="84" as="geometry" />
+        <mxCell id="arrow1" style="endArrow=block;strokeWidth=2;" parent="1" source="cam" target="yolo" edge="1">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="FeAikjar_WfJeEiBkdI0-10" value="" style="curved=1;startArrow=none;endArrow=block;exitX=1;exitY=0.5;entryX=0;entryY=0.51;rounded=0;" edge="1" parent="1" source="FeAikjar_WfJeEiBkdI0-3" target="FeAikjar_WfJeEiBkdI0-4">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points" />
-          </mxGeometry>
+        <mxCell id="arrow2" style="endArrow=block;strokeWidth=2;" parent="1" source="phone" target="ocr" edge="1">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="FeAikjar_WfJeEiBkdI0-11" value="" style="curved=1;startArrow=none;endArrow=block;exitX=1;exitY=0.51;entryX=0;entryY=0.51;rounded=0;" edge="1" parent="1" source="FeAikjar_WfJeEiBkdI0-4" target="FeAikjar_WfJeEiBkdI0-5">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points" />
-          </mxGeometry>
+        <mxCell id="arrow3" style="endArrow=block;strokeWidth=2;" parent="1" source="yolo" target="result" edge="1">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="FeAikjar_WfJeEiBkdI0-12" value="" style="curved=1;startArrow=none;endArrow=block;exitX=1;exitY=0.51;entryX=0;entryY=0.5;rounded=0;" edge="1" parent="1" source="FeAikjar_WfJeEiBkdI0-5" target="FeAikjar_WfJeEiBkdI0-6">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="FeAikjar_WfJeEiBkdI0-13" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.72;exitY=0.01;entryX=0;entryY=0.5;rounded=0;" edge="1" parent="1" source="FeAikjar_WfJeEiBkdI0-6" target="FeAikjar_WfJeEiBkdI0-7">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points">
-              <mxPoint x="1067" y="88" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="FeAikjar_WfJeEiBkdI0-14" value="" style="curved=1;startArrow=none;endArrow=block;exitX=1;exitY=0.5;entryX=0;entryY=0.51;rounded=0;" edge="1" parent="1" source="FeAikjar_WfJeEiBkdI0-6" target="FeAikjar_WfJeEiBkdI0-8">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="FeAikjar_WfJeEiBkdI0-15" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.7;exitY=1;entryX=0;entryY=0.49;rounded=0;" edge="1" parent="1" source="FeAikjar_WfJeEiBkdI0-6" target="FeAikjar_WfJeEiBkdI0-9">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points">
-              <mxPoint x="1067" y="329" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="FeAikjar_WfJeEiBkdI0-16" value="输出: 识别一致性修复" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
-          <mxGeometry x="20" y="982" width="512" height="116" as="geometry" />
-        </mxCell>
-        <mxCell id="FeAikjar_WfJeEiBkdI0-17" value="核心算法处理" style="whiteSpace=wrap;strokeWidth=2;verticalAlign=top;" vertex="1" parent="1">
-          <mxGeometry x="114" y="596" width="316" height="335" as="geometry" />
-        </mxCell>
-        <mxCell id="FeAikjar_WfJeEiBkdI0-18" value="&lt;b&gt;选择性扫描机制 (SSM)&lt;/b&gt;&#xa;(自适应遗忘噪声 / 记忆有效笔画)" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="FeAikjar_WfJeEiBkdI0-17">
-          <mxGeometry x="43" y="46" width="246" height="101" as="geometry" />
-        </mxCell>
-        <mxCell id="FeAikjar_WfJeEiBkdI0-19" value="&lt;b&gt;联合损失函数 (Joint Loss)&lt;/b&gt;&#xa;L = L_rec + λ L_ocr" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="FeAikjar_WfJeEiBkdI0-17">
-          <mxGeometry x="49" y="222" width="233" height="84" as="geometry" />
-        </mxCell>
-        <mxCell id="FeAikjar_WfJeEiBkdI0-20" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.5;entryY=0;rounded=0;" edge="1" parent="FeAikjar_WfJeEiBkdI0-17" source="FeAikjar_WfJeEiBkdI0-18" target="FeAikjar_WfJeEiBkdI0-19">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="FeAikjar_WfJeEiBkdI0-21" value="输入: 工业复杂环境样本" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
-          <mxGeometry x="47" y="430" width="450" height="116" as="geometry" />
-        </mxCell>
-        <mxCell id="FeAikjar_WfJeEiBkdI0-22" value="镜面高光遮挡&#xa;(OCR文字丢失)" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
-          <mxGeometry x="82" y="455" width="165" height="66" as="geometry" />
-        </mxCell>
-        <mxCell id="FeAikjar_WfJeEiBkdI0-23" value="标签破损/污渍&#xa;(特征断裂)" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
-          <mxGeometry x="297" y="455" width="164" height="66" as="geometry" />
-        </mxCell>
-        <mxCell id="FeAikjar_WfJeEiBkdI0-24" value="高光区域笔画还原&#xa;(OCR成功提取)" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
-          <mxGeometry x="55" y="1007" width="188" height="66" as="geometry" />
-        </mxCell>
-        <mxCell id="FeAikjar_WfJeEiBkdI0-25" value="受损特征上下文补全&#xa;(鲁棒性增强)" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
-          <mxGeometry x="293" y="1007" width="204" height="66" as="geometry" />
-        </mxCell>
-        <mxCell id="FeAikjar_WfJeEiBkdI0-26" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.2;entryY=0;rounded=0;" edge="1" parent="1" source="FeAikjar_WfJeEiBkdI0-22" target="FeAikjar_WfJeEiBkdI0-17">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points">
-              <mxPoint x="165" y="571" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="FeAikjar_WfJeEiBkdI0-27" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.8;entryY=0;rounded=0;" edge="1" parent="1" source="FeAikjar_WfJeEiBkdI0-23" target="FeAikjar_WfJeEiBkdI0-17">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points">
-              <mxPoint x="379" y="571" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="FeAikjar_WfJeEiBkdI0-28" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.16;exitY=1;entryX=0.5;entryY=-0.01;rounded=0;" edge="1" parent="1" source="FeAikjar_WfJeEiBkdI0-17" target="FeAikjar_WfJeEiBkdI0-24">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points">
-              <mxPoint x="149" y="957" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="FeAikjar_WfJeEiBkdI0-29" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.84;exitY=1;entryX=0.5;entryY=-0.01;rounded=0;" edge="1" parent="1" source="FeAikjar_WfJeEiBkdI0-17" target="FeAikjar_WfJeEiBkdI0-25">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points">
-              <mxPoint x="395" y="957" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="FeAikjar_WfJeEiBkdI0-30" value="前端 App (感知层)" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};size=65;" vertex="1" parent="1">
-          <mxGeometry x="20" y="1120" width="150" height="1340" as="geometry" />
-        </mxCell>
-        <mxCell id="FeAikjar_WfJeEiBkdI0-31" value="云端服务器 (推理层)" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};size=65;" vertex="1" parent="1">
-          <mxGeometry x="278" y="1120" width="162" height="1340" as="geometry" />
-        </mxCell>
-        <mxCell id="FeAikjar_WfJeEiBkdI0-32" value="par" style="shape=umlFrame;dashed=1;pointerEvents=0;dropTarget=0;strokeColor=#B3B3B3;height=20;width=30" vertex="1" parent="1">
-          <mxGeometry x="275" y="1537" width="170" height="332" as="geometry" />
-        </mxCell>
-        <mxCell id="FeAikjar_WfJeEiBkdI0-33" value="[Mamba-YOL-&#xa;O]" style="text;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;" vertex="1" parent="FeAikjar_WfJeEiBkdI0-32">
-          <mxGeometry x="30" width="140" height="20" as="geometry" />
-        </mxCell>
-        <mxCell id="FeAikjar_WfJeEiBkdI0-34" value="[Black-box&#xa;OCR]" style="shape=line;dashed=1;whiteSpace=wrap;verticalAlign=top;labelPosition=center;verticalLabelPosition=middle;align=center;strokeColor=#B3B3B3;" vertex="1" parent="FeAikjar_WfJeEiBkdI0-32">
-          <mxGeometry y="154" width="170" height="22" as="geometry" />
-        </mxCell>
-        <mxCell id="FeAikjar_WfJeEiBkdI0-35" value="" style="shape=umlFrame;dashed=1;pointerEvents=0;dropTarget=0;strokeColor=#B3B3B3;height=20;width=0" vertex="1" parent="1">
-          <mxGeometry x="265" y="1517" width="190" height="362" as="geometry" />
-        </mxCell>
-        <mxCell id="FeAikjar_WfJeEiBkdI0-36" value="" style="text;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;" vertex="1" parent="FeAikjar_WfJeEiBkdI0-35">
-          <mxGeometry width="190" height="20" as="geometry" />
-        </mxCell>
-        <mxCell id="FeAikjar_WfJeEiBkdI0-37" value="选取图片/接入视频流" style="curved=1;endArrow=block;rounded=0;" edge="1" parent="1" source="FeAikjar_WfJeEiBkdI0-30" target="FeAikjar_WfJeEiBkdI0-30">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points">
-              <mxPoint x="146" y="1276" />
-              <mxPoint x="146" y="1306" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="FeAikjar_WfJeEiBkdI0-38" value="1" style="ellipse;aspect=fixed;fillColor=#000000;align=center;fontColor=#FFFFFF;" vertex="1" parent="FeAikjar_WfJeEiBkdI0-37">
-          <mxGeometry width="14" height="14" relative="1" as="geometry">
-            <mxPoint x="-57" y="-22" as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="FeAikjar_WfJeEiBkdI0-39" value="封装 Multipart 请求" style="curved=1;endArrow=block;rounded=0;" edge="1" parent="1" source="FeAikjar_WfJeEiBkdI0-30" target="FeAikjar_WfJeEiBkdI0-30">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points">
-              <mxPoint x="146" y="1362" />
-              <mxPoint x="146" y="1392" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="FeAikjar_WfJeEiBkdI0-40" value="2" style="ellipse;aspect=fixed;fillColor=#000000;align=center;fontColor=#FFFFFF;" vertex="1" parent="FeAikjar_WfJeEiBkdI0-39">
-          <mxGeometry width="14" height="14" relative="1" as="geometry">
-            <mxPoint x="-57" y="-22" as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="FeAikjar_WfJeEiBkdI0-41" value="发送分析请求 (Image Data)" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;endArrow=block;" edge="1" parent="1" source="FeAikjar_WfJeEiBkdI0-30" target="FeAikjar_WfJeEiBkdI0-31">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points">
-              <mxPoint x="236" y="1448" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="FeAikjar_WfJeEiBkdI0-42" value="3" style="ellipse;aspect=fixed;fillColor=#000000;align=center;fontColor=#FFFFFF;" vertex="1" parent="FeAikjar_WfJeEiBkdI0-41">
-          <mxGeometry width="14" height="14" relative="1" as="geometry">
-            <mxPoint x="-139.5" y="-7" as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="FeAikjar_WfJeEiBkdI0-43" value="定位标签与分类" style="curved=1;endArrow=block;rounded=0;" edge="1" parent="1" source="FeAikjar_WfJeEiBkdI0-31" target="FeAikjar_WfJeEiBkdI0-31">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points">
-              <mxPoint x="410" y="1636" />
-              <mxPoint x="410" y="1666" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="FeAikjar_WfJeEiBkdI0-44" value="4" style="ellipse;aspect=fixed;fillColor=#000000;align=center;fontColor=#FFFFFF;" vertex="1" parent="FeAikjar_WfJeEiBkdI0-43">
-          <mxGeometry width="14" height="14" relative="1" as="geometry">
-            <mxPoint x="-57" y="-22" as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="FeAikjar_WfJeEiBkdI0-45" value="提取结构化文本" style="curved=1;endArrow=block;rounded=0;" edge="1" parent="1" source="FeAikjar_WfJeEiBkdI0-31" target="FeAikjar_WfJeEiBkdI0-31">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points">
-              <mxPoint x="410" y="1789" />
-              <mxPoint x="410" y="1819" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="FeAikjar_WfJeEiBkdI0-46" value="5" style="ellipse;aspect=fixed;fillColor=#000000;align=center;fontColor=#FFFFFF;" vertex="1" parent="FeAikjar_WfJeEiBkdI0-45">
-          <mxGeometry width="14" height="14" relative="1" as="geometry">
-            <mxPoint x="-57" y="-22" as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="FeAikjar_WfJeEiBkdI0-47" value="结果置信度筛选" style="curved=1;endArrow=block;rounded=0;" edge="1" parent="1" source="FeAikjar_WfJeEiBkdI0-31" target="FeAikjar_WfJeEiBkdI0-31">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points">
-              <mxPoint x="410" y="1970" />
-              <mxPoint x="410" y="2000" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="FeAikjar_WfJeEiBkdI0-48" value="6" style="ellipse;aspect=fixed;fillColor=#000000;align=center;fontColor=#FFFFFF;" vertex="1" parent="FeAikjar_WfJeEiBkdI0-47">
-          <mxGeometry width="14" height="14" relative="1" as="geometry">
-            <mxPoint x="-57" y="-22" as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="FeAikjar_WfJeEiBkdI0-49" value="类别与文本字段融合绑定" style="curved=1;endArrow=block;rounded=0;" edge="1" parent="1" source="FeAikjar_WfJeEiBkdI0-31" target="FeAikjar_WfJeEiBkdI0-31">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points">
-              <mxPoint x="410" y="2052" />
-              <mxPoint x="410" y="2082" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="FeAikjar_WfJeEiBkdI0-50" value="7" style="ellipse;aspect=fixed;fillColor=#000000;align=center;fontColor=#FFFFFF;" vertex="1" parent="FeAikjar_WfJeEiBkdI0-49">
-          <mxGeometry width="14" height="14" relative="1" as="geometry">
-            <mxPoint x="-57" y="-22" as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="FeAikjar_WfJeEiBkdI0-51" value="返回结果对象 (JSON)" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;dashed=1;dashPattern=2 3;endArrow=block;" edge="1" parent="1" source="FeAikjar_WfJeEiBkdI0-31" target="FeAikjar_WfJeEiBkdI0-30">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points">
-              <mxPoint x="239" y="2138" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="FeAikjar_WfJeEiBkdI0-52" value="8" style="ellipse;aspect=fixed;fillColor=#000000;align=center;fontColor=#FFFFFF;" vertex="1" parent="FeAikjar_WfJeEiBkdI0-51">
-          <mxGeometry width="14" height="14" relative="1" as="geometry">
-            <mxPoint x="125.5" y="-7" as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="FeAikjar_WfJeEiBkdI0-53" value="渲染 ResultPage 界面" style="curved=1;endArrow=block;rounded=0;" edge="1" parent="1" source="FeAikjar_WfJeEiBkdI0-30" target="FeAikjar_WfJeEiBkdI0-30">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points">
-              <mxPoint x="146" y="2243" />
-              <mxPoint x="146" y="2273" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="FeAikjar_WfJeEiBkdI0-54" value="9" style="ellipse;aspect=fixed;fillColor=#000000;align=center;fontColor=#FFFFFF;" vertex="1" parent="FeAikjar_WfJeEiBkdI0-53">
-          <mxGeometry width="14" height="14" relative="1" as="geometry">
-            <mxPoint x="-57" y="-22" as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="FeAikjar_WfJeEiBkdI0-55" value="提示人工复核" style="curved=1;endArrow=block;rounded=0;" edge="1" parent="1" source="FeAikjar_WfJeEiBkdI0-30" target="FeAikjar_WfJeEiBkdI0-30">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points">
-              <mxPoint x="146" y="2325" />
-              <mxPoint x="146" y="2355" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="FeAikjar_WfJeEiBkdI0-56" value="10" style="ellipse;aspect=fixed;fillColor=#000000;align=center;fontColor=#FFFFFF;" vertex="1" parent="FeAikjar_WfJeEiBkdI0-55">
-          <mxGeometry width="14" height="14" relative="1" as="geometry">
-            <mxPoint x="-57" y="-22" as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="FeAikjar_WfJeEiBkdI0-57" value="1. 感知阶段" style="fillColor=#ffff88;strokeColor=#9E916F;" vertex="1" parent="1">
-          <mxGeometry x="20" y="1195" width="150" height="49" as="geometry" />
-        </mxCell>
-        <mxCell id="FeAikjar_WfJeEiBkdI0-58" value="2. 识别阶段 (并行处理)" style="fillColor=#ffff88;strokeColor=#9E916F;" vertex="1" parent="1">
-          <mxGeometry x="270" y="1468" width="179" height="49" as="geometry" />
-        </mxCell>
-        <mxCell id="FeAikjar_WfJeEiBkdI0-59" value="3. 决策阶段" style="fillColor=#ffff88;strokeColor=#9E916F;" vertex="1" parent="1">
-          <mxGeometry x="278" y="1889" width="162" height="49" as="geometry" />
-        </mxCell>
-        <mxCell id="FeAikjar_WfJeEiBkdI0-60" value="4. 结果呈现" style="fillColor=#ffff88;strokeColor=#9E916F;" vertex="1" parent="1">
-          <mxGeometry x="20" y="2158" width="150" height="49" as="geometry" />
+        <mxCell id="arrow4" style="endArrow=block;strokeWidth=2;" parent="1" source="ocr" target="result" edge="1">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
