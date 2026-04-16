@@ -4,6 +4,67 @@
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="FeAikjar_WfJeEiBkdI0-1" value="多任务并行输出层" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="1117" y="20" width="300" height="386" as="geometry" />
+        </mxCell>
+        <mxCell id="FeAikjar_WfJeEiBkdI0-2" value="混合主干网络 Mixed Backbone" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="174" y="48" width="893" height="306" as="geometry" />
+        </mxCell>
+        <mxCell id="FeAikjar_WfJeEiBkdI0-3" value="能效标签&#xa;原始ROI图像" style="shape=cylinder3;boundedLbl=1;backgroundOutline=1;size=10;strokeWidth=2;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="20" y="162" width="104" height="85" as="geometry" />
+        </mxCell>
+        <mxCell id="FeAikjar_WfJeEiBkdI0-4" value="&lt;b&gt;浅层: CNN Stages&lt;/b&gt;&#xa;(提取局部笔画特征)" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="199" y="171" width="253" height="66" as="geometry" />
+        </mxCell>
+        <mxCell id="FeAikjar_WfJeEiBkdI0-5" value="&lt;b&gt;中层: Mixed Neck&lt;/b&gt;&#xa;(CNN + VSS Block 交叉扫描)" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="501" y="171" width="257" height="66" as="geometry" />
+        </mxCell>
+        <mxCell id="FeAikjar_WfJeEiBkdI0-6" value="&lt;b&gt;深层: Mamba Stages&lt;/b&gt;&#xa;(线性复杂度全局感受野)" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="808" y="162" width="234" height="84" as="geometry" />
+        </mxCell>
+        <mxCell id="FeAikjar_WfJeEiBkdI0-7" value="&lt;b&gt;分支A: 检测Head&lt;/b&gt;&#xa;(标签定位框 BBox)" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="1142" y="55" width="250" height="66" as="geometry" />
+        </mxCell>
+        <mxCell id="FeAikjar_WfJeEiBkdI0-8" value="&lt;b&gt;分支B: 分类Head&lt;/b&gt;&#xa;(能效等级+物理状态)" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="1142" y="171" width="250" height="66" as="geometry" />
+        </mxCell>
+        <mxCell id="FeAikjar_WfJeEiBkdI0-9" value="&lt;b&gt;分支C: Mamba OCR解码器&lt;/b&gt;&#xa;(原生序列解码输出文本)" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="1151" y="288" width="232" height="84" as="geometry" />
+        </mxCell>
+        <mxCell id="FeAikjar_WfJeEiBkdI0-10" value="" style="curved=1;startArrow=none;endArrow=block;exitX=1;exitY=0.5;entryX=0;entryY=0.51;rounded=0;" edge="1" parent="1" source="FeAikjar_WfJeEiBkdI0-3" target="FeAikjar_WfJeEiBkdI0-4">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FeAikjar_WfJeEiBkdI0-11" value="" style="curved=1;startArrow=none;endArrow=block;exitX=1;exitY=0.51;entryX=0;entryY=0.51;rounded=0;" edge="1" parent="1" source="FeAikjar_WfJeEiBkdI0-4" target="FeAikjar_WfJeEiBkdI0-5">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FeAikjar_WfJeEiBkdI0-12" value="" style="curved=1;startArrow=none;endArrow=block;exitX=1;exitY=0.51;entryX=0;entryY=0.5;rounded=0;" edge="1" parent="1" source="FeAikjar_WfJeEiBkdI0-5" target="FeAikjar_WfJeEiBkdI0-6">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FeAikjar_WfJeEiBkdI0-13" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.72;exitY=0.01;entryX=0;entryY=0.5;rounded=0;" edge="1" parent="1" source="FeAikjar_WfJeEiBkdI0-6" target="FeAikjar_WfJeEiBkdI0-7">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1067" y="88" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FeAikjar_WfJeEiBkdI0-14" value="" style="curved=1;startArrow=none;endArrow=block;exitX=1;exitY=0.5;entryX=0;entryY=0.51;rounded=0;" edge="1" parent="1" source="FeAikjar_WfJeEiBkdI0-6" target="FeAikjar_WfJeEiBkdI0-8">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FeAikjar_WfJeEiBkdI0-15" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.7;exitY=1;entryX=0;entryY=0.49;rounded=0;" edge="1" parent="1" source="FeAikjar_WfJeEiBkdI0-6" target="FeAikjar_WfJeEiBkdI0-9">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1067" y="329" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
