@@ -61,7 +61,7 @@
             <mxPoint x="459" y="460" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="z5i9DncNK-iLaoH-zkep-91" value="结构化反馈 (JSON)" style="curved=1;startArrow=none;endArrow=block;exitX=0.717;exitY=0.015;entryX=0.522;entryY=0.991;rounded=0;entryDx=0;entryDy=0;exitDx=0;exitDy=0;exitPerimeter=0;entryPerimeter=0;" parent="1" source="z5i9DncNK-iLaoH-zkep-71" target="z5i9DncNK-iLaoH-zkep-82" edge="1">
+        <mxCell id="z5i9DncNK-iLaoH-zkep-91" value="结构化反馈 (JSON)" style="curved=1;startArrow=none;endArrow=block;exitX=0.73;exitY=-0.012;entryX=0.5;entryY=1;rounded=0;entryDx=0;entryDy=0;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="z5i9DncNK-iLaoH-zkep-71" target="z5i9DncNK-iLaoH-zkep-82" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points" />
           </mxGeometry>
@@ -70,7 +70,7 @@
           <mxGeometry x="630" y="240" width="430" height="183" as="geometry" />
         </mxCell>
         <mxCell id="z5i9DncNK-iLaoH-zkep-82" value="业务层 - 前端 App" style="whiteSpace=wrap;strokeWidth=2;verticalAlign=top;" parent="hGZf9_VGwsNqAUEReWxE-1" vertex="1">
-          <mxGeometry x="-20" width="450" height="183" as="geometry" />
+          <mxGeometry x="-28.82" width="450" height="183" as="geometry" />
         </mxCell>
         <mxCell id="z5i9DncNK-iLaoH-zkep-83" value="识别结果展示页&#xa;(图像标注 + 能效等级 + 键值对)" style="whiteSpace=wrap;strokeWidth=2;" parent="hGZf9_VGwsNqAUEReWxE-1" vertex="1">
           <mxGeometry x="90.00229508196722" y="27.832699619771862" width="212.3565573770492" height="58.44866920152092" as="geometry" />
