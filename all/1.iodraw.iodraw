@@ -59,7 +59,7 @@
         <mxCell id="z5i9DncNK-iLaoH-zkep-82" value="业务层 - 前端 App" style="whiteSpace=wrap;strokeWidth=2;verticalAlign=top;" parent="1" vertex="1">
           <mxGeometry x="572" y="150" width="488" height="263" as="geometry" />
         </mxCell>
-        <mxCell id="z5i9DncNK-iLaoH-zkep-83" value="&lt;b&gt;识别结果展示页&lt;/b&gt;&#xa;(图像标注 + 能效等级 + 键值对)" style="whiteSpace=wrap;strokeWidth=2;" parent="1" vertex="1">
+        <mxCell id="z5i9DncNK-iLaoH-zkep-83" value="识别结果展示页&#xa;(图像标注 + 能效等级 + 键值对)" style="whiteSpace=wrap;strokeWidth=2;" parent="1" vertex="1">
           <mxGeometry x="696" y="190" width="241" height="84" as="geometry" />
         </mxCell>
         <mxCell id="z5i9DncNK-iLaoH-zkep-84" value="📊&#xa;数据看板" style="ellipse;aspect=fixed;strokeWidth=2;whiteSpace=wrap;" parent="1" vertex="1">
