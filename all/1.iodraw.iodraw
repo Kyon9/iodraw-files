@@ -8,7 +8,7 @@
           <mxGeometry x="200" y="220" width="350" height="193" as="geometry" />
         </mxCell>
         <mxCell id="z5i9DncNK-iLaoH-zkep-69" value="📹 工业产线场景&#xa;(实时视频流)" style="whiteSpace=wrap;strokeWidth=2;" parent="z5i9DncNK-iLaoH-zkep-68" vertex="1">
-          <mxGeometry x="62.4031007751938" y="32.80237154150198" width="248.25581395348834" height="50.34782608695652" as="geometry" />
+          <mxGeometry x="50.8731007751938" y="50.00237154150197" width="248.25581395348834" height="50.34782608695652" as="geometry" />
         </mxCell>
         <mxCell id="z5i9DncNK-iLaoH-zkep-70" value="📱 移动端/手机&#xa;(离线相册图片)" style="whiteSpace=wrap;strokeWidth=2;" parent="z5i9DncNK-iLaoH-zkep-68" vertex="1">
           <mxGeometry x="66.47286821705427" y="121.29249011857706" width="237.4031007751938" height="50.34782608695652" as="geometry" />
