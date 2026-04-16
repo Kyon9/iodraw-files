@@ -56,40 +56,6 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="z5i9DncNK-iLaoH-zkep-82" value="业务层 - 前端 App" style="whiteSpace=wrap;strokeWidth=2;verticalAlign=top;" parent="1" vertex="1">
-          <mxGeometry x="572" y="150" width="488" height="263" as="geometry" />
-        </mxCell>
-        <mxCell id="z5i9DncNK-iLaoH-zkep-83" value="识别结果展示页&#xa;(图像标注 + 能效等级 + 键值对)" style="whiteSpace=wrap;strokeWidth=2;" parent="1" vertex="1">
-          <mxGeometry x="696" y="190" width="241" height="84" as="geometry" />
-        </mxCell>
-        <mxCell id="z5i9DncNK-iLaoH-zkep-84" value="📊&#xa;数据看板" style="ellipse;aspect=fixed;strokeWidth=2;whiteSpace=wrap;" parent="1" vertex="1">
-          <mxGeometry x="648" y="308" width="79" height="79" as="geometry" />
-        </mxCell>
-        <mxCell id="z5i9DncNK-iLaoH-zkep-85" value="🔍&#xa;人工复核" style="ellipse;aspect=fixed;strokeWidth=2;whiteSpace=wrap;" parent="1" vertex="1">
-          <mxGeometry x="777" y="308" width="79" height="79" as="geometry" />
-        </mxCell>
-        <mxCell id="z5i9DncNK-iLaoH-zkep-86" value="📁&#xa;样本仓库" style="ellipse;aspect=fixed;strokeWidth=2;whiteSpace=wrap;" parent="1" vertex="1">
-          <mxGeometry x="906" y="308" width="79" height="79" as="geometry" />
-        </mxCell>
-        <mxCell id="z5i9DncNK-iLaoH-zkep-87" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.16;exitY=0.99;entryX=0.5;entryY=0.01;rounded=0;" parent="1" source="z5i9DncNK-iLaoH-zkep-83" target="z5i9DncNK-iLaoH-zkep-84" edge="1">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points">
-              <mxPoint x="687" y="283" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="z5i9DncNK-iLaoH-zkep-88" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=0.99;entryX=0.5;entryY=0.01;rounded=0;" parent="1" source="z5i9DncNK-iLaoH-zkep-83" target="z5i9DncNK-iLaoH-zkep-85" edge="1">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="z5i9DncNK-iLaoH-zkep-89" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.83;exitY=0.99;entryX=0.5;entryY=0.01;rounded=0;" parent="1" source="z5i9DncNK-iLaoH-zkep-83" target="z5i9DncNK-iLaoH-zkep-86" edge="1">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points">
-              <mxPoint x="945" y="283" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
         <mxCell id="z5i9DncNK-iLaoH-zkep-90" value="标准化上传请求 (Multipart/Form-Data)" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.172;entryY=-0.007;rounded=0;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="z5i9DncNK-iLaoH-zkep-68" target="z5i9DncNK-iLaoH-zkep-71" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points" />
@@ -98,6 +64,43 @@
         <mxCell id="z5i9DncNK-iLaoH-zkep-91" value="ResultPage 结构化反馈 (JSON)" style="curved=1;startArrow=none;endArrow=block;exitX=0.717;exitY=0.015;entryX=0.5;entryY=1;rounded=0;entryDx=0;entryDy=0;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="z5i9DncNK-iLaoH-zkep-71" target="z5i9DncNK-iLaoH-zkep-82" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hGZf9_VGwsNqAUEReWxE-1" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="572" y="150" width="448" height="263" as="geometry" />
+        </mxCell>
+        <mxCell id="z5i9DncNK-iLaoH-zkep-82" value="业务层 - 前端 App" style="whiteSpace=wrap;strokeWidth=2;verticalAlign=top;" parent="hGZf9_VGwsNqAUEReWxE-1" vertex="1">
+          <mxGeometry width="448" height="263" as="geometry" />
+        </mxCell>
+        <mxCell id="z5i9DncNK-iLaoH-zkep-83" value="识别结果展示页&#xa;(图像标注 + 能效等级 + 键值对)" style="whiteSpace=wrap;strokeWidth=2;" parent="hGZf9_VGwsNqAUEReWxE-1" vertex="1">
+          <mxGeometry x="113.8360655737705" y="40" width="221.24590163934425" height="84" as="geometry" />
+        </mxCell>
+        <mxCell id="z5i9DncNK-iLaoH-zkep-84" value="📊&#xa;数据看板" style="ellipse;aspect=fixed;strokeWidth=2;whiteSpace=wrap;" parent="hGZf9_VGwsNqAUEReWxE-1" vertex="1">
+          <mxGeometry x="69.77049180327869" y="158" width="72.52459016393443" height="72.52459016393443" as="geometry" />
+        </mxCell>
+        <mxCell id="z5i9DncNK-iLaoH-zkep-85" value="🔍&#xa;人工复核" style="ellipse;aspect=fixed;strokeWidth=2;whiteSpace=wrap;" parent="hGZf9_VGwsNqAUEReWxE-1" vertex="1">
+          <mxGeometry x="188.19672131147541" y="158" width="72.52459016393443" height="72.52459016393443" as="geometry" />
+        </mxCell>
+        <mxCell id="z5i9DncNK-iLaoH-zkep-86" value="📁&#xa;样本仓库" style="ellipse;aspect=fixed;strokeWidth=2;whiteSpace=wrap;" parent="hGZf9_VGwsNqAUEReWxE-1" vertex="1">
+          <mxGeometry x="306.62295081967216" y="158" width="72.52459016393443" height="72.52459016393443" as="geometry" />
+        </mxCell>
+        <mxCell id="z5i9DncNK-iLaoH-zkep-87" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.16;exitY=0.99;entryX=0.5;entryY=0.01;rounded=0;" parent="hGZf9_VGwsNqAUEReWxE-1" source="z5i9DncNK-iLaoH-zkep-83" target="z5i9DncNK-iLaoH-zkep-84" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="105.57377049180329" y="133" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="z5i9DncNK-iLaoH-zkep-88" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=0.99;entryX=0.5;entryY=0.01;rounded=0;" parent="hGZf9_VGwsNqAUEReWxE-1" source="z5i9DncNK-iLaoH-zkep-83" target="z5i9DncNK-iLaoH-zkep-85" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="z5i9DncNK-iLaoH-zkep-89" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.83;exitY=0.99;entryX=0.5;entryY=0.01;rounded=0;" parent="hGZf9_VGwsNqAUEReWxE-1" source="z5i9DncNK-iLaoH-zkep-83" target="z5i9DncNK-iLaoH-zkep-86" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="342.42622950819674" y="133" />
+            </Array>
           </mxGeometry>
         </mxCell>
       </root>
