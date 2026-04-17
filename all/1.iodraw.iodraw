@@ -61,9 +61,10 @@
             <mxPoint x="459" y="460" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="z5i9DncNK-iLaoH-zkep-91" value="结构化反馈 (JSON)" style="curved=1;startArrow=none;endArrow=block;exitX=0.73;exitY=-0.012;entryX=0.5;entryY=1;rounded=0;entryDx=0;entryDy=0;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="z5i9DncNK-iLaoH-zkep-71" target="z5i9DncNK-iLaoH-zkep-82" edge="1">
+        <mxCell id="z5i9DncNK-iLaoH-zkep-91" value="结构化反馈 (JSON)" style="curved=1;startArrow=none;endArrow=block;entryX=0.5;entryY=1;rounded=0;entryDx=0;entryDy=0;" parent="1" target="z5i9DncNK-iLaoH-zkep-82" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points" />
+            <mxPoint x="826" y="460" as="sourcePoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="hGZf9_VGwsNqAUEReWxE-1" value="" style="group" vertex="1" connectable="0" parent="1">
